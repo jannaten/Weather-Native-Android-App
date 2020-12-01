@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18287d"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99141414"
+        android:text="@string/title_header"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99141414"
+        android:text="@string/app_title"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99141414"
+        android:text="@string/option_text"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/lanbutton"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/option_1" />
+
+    <Button
+        android:id="@+id/CityCountryButton"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:text="@string/option_2" />
+    <Button
+        android:id="@+id/PostlaCountryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/option_3"
+        android:layout_marginLeft="75dp"
+        />
+
+    <Button
+        android:id="@+id/CityIDButton"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:text="@string/option_4" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        android:layout_marginTop="-70dp"
+        app:srcCompat="@drawable/illustration" />
+
+    <Button
+        android:id="@+id/Manual"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="130dp"
+        android:text="@string/manual" />
+</LinearLayout>
+
+<!--    android:layout_marginLeft="20dp" />-->

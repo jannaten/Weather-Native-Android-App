@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18287d"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/PostalTextView"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="50sp"
+        android:text="@string/postal_code"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/PostalEditText"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140sp"
+        android:layout_marginTop="-40sp"
+        android:ems="3"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:text="@string/init_post"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/CountryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/country_code"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/CountryEditText"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160sp"
+        android:layout_marginTop="-40sp"
+        android:ems="3"
+        android:inputType="text"
+        android:text="@string/code"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/setValues"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250sp"
+        android:layout_marginTop="-70sp"
+        android:background="#FFF"
+        android:onClick="setParseValues"
+        android:text="@string/set_values" />
+
+
+    <TextView
+        android:id="@+id/humidityTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110sp"
+        android:layout_marginTop="40sp"
+        android:text="@string/humidity"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="-27sp"
+        android:textColor="@android:color/white"
+        android:text="@string/init_humid"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/temperatureTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20sp"
+        android:text="@string/temperature"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="-27sp"
+        android:text="@string/init_temp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/feelsText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="110sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/feels_like"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/feelsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="-27sp"
+        android:text="@string/feels_temp"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/windTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20sp"
+        android:text="@string/wind_speed"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/windTextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="-27sp"
+        android:text="@string/init_wind"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/CountryText1"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="71sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/country_code"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/CountryText"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="-27sp"
+        android:text="@string/n_a"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/weatherButton"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140sp"
+        android:layout_marginTop="20sp"
+        android:background="#FFF"
+        android:onClick="getWeather"
+        android:text="@string/check_weather" />
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="50dp"
+        android:background="#FFF"
+        android:text="@string/go_back" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="850dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="-670dp"
+        app:srcCompat="@drawable/illustration1"
+        />
+</LinearLayout>

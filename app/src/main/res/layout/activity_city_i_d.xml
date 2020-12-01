@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18287d"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/CityIDView"
+        android:layout_width="73dp"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60sp"
+        android:layout_marginTop="50sp"
+        android:text="@string/city_id"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/CityIDEditText"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="130sp"
+        android:layout_marginTop="-40sp"
+        android:ems="3"
+        android:inputType="text"
+        android:text="@string/init_cityID"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/setValues"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250sp"
+        android:layout_marginTop="-50sp"
+        android:background="#FFF"
+        android:onClick="setParseValues"
+        android:text="@string/set_values" />
+
+
+    <TextView
+        android:id="@+id/humidityTextView2"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110sp"
+        android:layout_marginTop="40sp"
+        android:text="@string/humidity"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="-27sp"
+        android:text="@string/init_humid"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/temperatureTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/temperature"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="-27sp"
+        android:text="@string/init_temp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/feelsText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="110sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/feels_like"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/feelsText"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="-27sp"
+        android:text="@string/feels_temp"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/windTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20sp"
+        android:text="@string/wind_speed"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/windTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="-27sp"
+        android:text="@string/init_wind"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/CountryText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="71sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/country_code"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/CountryText"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220sp"
+        android:layout_marginTop="-27sp"
+        android:text="@string/n_a"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/weatherButton"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140sp"
+        android:layout_marginTop="20sp"
+        android:background="#FFF"
+        android:onClick="getWeather"
+        android:text="@string/check_weather" />
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="wrap_content"
+        android:background="#FFF"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170sp"
+        android:layout_marginTop="50dp"
+        android:text="@string/go_back" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="850dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="-650dp"
+        app:srcCompat="@drawable/illustration1"
+        />
+</LinearLayout>
