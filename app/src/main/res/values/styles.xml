@@ -37,7 +37,7 @@
     </style>
 
     <!-- Large temperature label -->
-    <style name="TextAppearance.WeatherWise.Temperature">
+    <style name="TextAppearance.WeatherWise.Temperature" parent="TextAppearance.Material3.HeadlineLarge">
         <item name="android:textSize">72sp</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:letterSpacing">-0.04</item>
