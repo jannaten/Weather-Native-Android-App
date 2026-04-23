@@ -1,41 +1,69 @@
 <resources>
-    <string name="app_name">Katso Ilma</string>
-    <string name="init_temp">0°C</string>
-    <string name="temperature">Temperature :</string>
-    <string name="feels_like">Feels like :</string>
-    <string name="feels_temp">0°C</string>
-    <string name="wind_speed">Wind speed :</string>
-    <string name="init_wind">0ms⁻¹</string>
-    <string name="country_code">Country Code :</string>
-    <string name="n_a">N/A</string>
-    <string name="check_weather">Check Weather</string>
-    <string name="go_back">Go Back</string>
-    <string name="city_text">City :</string>
-    <string name="city_here">City here</string>
-    <string name="code">Code</string>
-    <string name="set_values">Set values</string>
-    <string name="humidity">Humidity :</string>
-    <string name="init_humid">0%</string>
-    <string name="city_id">City ID :</string>
-    <string name="init_cityID">0</string>
-    <string name="latitute">Latitute :</string>
-    <string name="init_lat">0</string>
-    <string name="longitute">Longitute :</string>
-    <string name="init_lon">0</string>
-    <string name="get_co_ordinate">Get Co-ordinate</string>
-    <string name="postal_code">Postal Code :</string>
-    <string name="init_post">0</string>
-    <string name="must_read">Must Read</string>
-    <string name="first_para">1. If you want to find the weather by \n latitute and longitute you must make \n sure your device location is tured on. \n And then set the coordinates from \n setting option and after set the data \n just click the get weather but button.</string>
-    <string name="second_para">2. If you want to find the weather by \n city and country code you must make \n sure put the values. After that set the \n values by clicking Set Values button\n setting option and after set the data \n and click the get weather but button.</string>
-    <string name="third_para">3. If you want to find the weather by \n postal and country code you make \n sure put the values. After that set the \n values by clicking Set Values button\n setting option and after set the data \n and click the get weather but button.</string>
-    <string name="fourth_para">4. If you want to find the weather by \n city code you must make sure you put \n sure put the values. After that set the \n values by clicking Set Values button\n setting option and after set the data \n and click the get weather but button.</string>
-    <string name="title_header">Welcome to my</string>
-    <string name="app_title">Weather App</string>
-    <string name="option_text">Check weather by</string>
-    <string name="option_1">Longitute and Latitude</string>
-    <string name="option_2">City name and Country code</string>
-    <string name="option_3">Postal code and Country code</string>
-    <string name="option_4">City Code</string>
-    <string name="manual">Manual</string>
+    <string name="app_name">WeatherWise</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Home screen -->
+    <string name="feels_like_format">Feels like %s</string>
+    <string name="high_low_format">↑ %s  ↓ %s</string>
+    <string name="last_updated_format">Updated %s</string>
+    <string name="location_permission_rationale">Location permission is needed to show local weather. Grant it in Settings.</string>
+    <string name="location_unavailable">Unable to get location. Check that GPS is enabled.</string>
+    <string name="retry">Retry</string>
+    <string name="no_weather_yet">Enable location or search for a city to see weather.</string>
+    <string name="tap_for_details">Tap for full details and forecast</string>
+
+    <!-- Search screen -->
+    <string name="search_hint_city">City (e.g. London)</string>
+    <string name="search_hint_country">Country code (e.g. GB)</string>
+    <string name="search_hint_latitude">Latitude (−90 … 90)</string>
+    <string name="search_hint_longitude">Longitude (−180 … 180)</string>
+    <string name="search_hint_zip">Postal code</string>
+    <string name="search_hint_zip_country">Country code</string>
+    <string name="search_hint_city_id">OpenWeatherMap city ID</string>
+    <string name="search_button">Search</string>
+    <string name="mode_city">City</string>
+    <string name="mode_coordinates">Coordinates</string>
+    <string name="mode_zip">Postal</string>
+    <string name="mode_city_id">City ID</string>
+
+    <!-- Weather detail -->
+    <string name="humidity_label">Humidity</string>
+    <string name="wind_label">Wind</string>
+    <string name="pressure_label">Pressure</string>
+    <string name="visibility_label">Visibility</string>
+    <string name="sunrise_label">Sunrise</string>
+    <string name="sunset_label">Sunset</string>
+    <string name="cloudiness_label">Cloud cover</string>
+    <string name="hourly_forecast_title">Hourly Forecast</string>
+    <string name="daily_forecast_title">5-Day Forecast</string>
+    <string name="save_location">Save location</string>
+    <string name="unsave_location">Remove from saved</string>
+
+    <!-- Saved locations -->
+    <string name="saved_locations_empty">No saved locations yet.\nSearch for a city and save it.</string>
+    <string name="current_location_chip">Current</string>
+    <string name="delete">Delete</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="temp_unit_title">Temperature unit</string>
+    <string name="celsius">Celsius (°C)</string>
+    <string name="fahrenheit">Fahrenheit (°F)</string>
+    <string name="wind_unit_title">Wind speed unit</string>
+    <string name="unit_ms">m/s</string>
+    <string name="unit_mph">mph</string>
+    <string name="unit_kmh">km/h</string>
+    <string name="app_version">Version</string>
+    <string name="data_source">Weather data by OpenWeatherMap</string>
+
+    <!-- Accessibility -->
+    <string name="cd_weather_emoji">Weather condition icon</string>
+    <string name="cd_fab_search">Open search</string>
+    <string name="cd_fab_save">Save or unsave this location</string>
+    <string name="cd_delete_location">Delete saved location</string>
 </resources>

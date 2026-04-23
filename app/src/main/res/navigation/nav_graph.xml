@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.weatherapp.presentation.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_home_to_weather_detail"
+            app:destination="@id/weatherDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.weatherapp.presentation.search.SearchFragment"
+        android:label="@string/nav_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_search_to_weather_detail"
+            app:destination="@id/weatherDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherDetailFragment"
+        android:name="com.example.weatherapp.presentation.weather.WeatherDetailFragment"
+        android:label="Weather Detail"
+        tools:layout="@layout/fragment_weather_detail">
+        <argument
+            android:name="cityId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="lat"
+            app:argType="float"
+            android:defaultValue="0" />
+        <argument
+            android:name="lon"
+            app:argType="float"
+            android:defaultValue="0" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedLocationsFragment"
+        android:name="com.example.weatherapp.presentation.savedlocations.SavedLocationsFragment"
+        android:label="@string/nav_saved"
+        tools:layout="@layout/fragment_saved_locations">
+        <action
+            android:id="@+id/action_saved_locations_to_weather_detail"
+            app:destination="@id/weatherDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.weatherapp.presentation.settings.SettingsFragment"
+        android:label="@string/settings_title"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
